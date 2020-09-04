@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
 import { useRouter } from 'next/router';
+import Product from "../Interface/Product";
 interface Props {
-	products?: String[]
+	products?: Product[];
 }
 const Products = (props: Props) => {
 	const router = useRouter();
